@@ -2,7 +2,7 @@
   "name": "angular-debounce",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "~1.0.5"
+    "angular": "~1.2.0"
   },
   "main": "debounce.js"
 }
