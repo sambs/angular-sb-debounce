@@ -2,11 +2,10 @@
 
 angular.module('debounce', [])
 
-  .factory('debounce', ['$timeout', '$q', function ($timeout, $q) {
+  .factory('debounce', ['$timeout', function ($timeout) {
 
     return function (func, wait, immediate) {
       var timeout;
-
       return function () {
         var context = this, args = arguments;
         var later = function () {
