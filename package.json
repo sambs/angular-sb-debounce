@@ -16,6 +16,5 @@
     "url": "git@github.com:sambs/angular-sb-debounce.git"
   },
   "author": "Sam Barnes",
-  "license": "MIT",
-  "readmeFilename": "Readme.md"
+  "license": "MIT"
 }
