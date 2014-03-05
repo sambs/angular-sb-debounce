@@ -1,7 +1,7 @@
 sbDebounce
 ==========
 
-A debounce service for Angular.js. Useful to limit the frequency of calls to an event handler.
+A debounce service for AngularJS. Useful to limit the frequency of calls to an event handler.
 
     var wrapped = debounce(func, wait, immediate);
 

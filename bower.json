@@ -1,11 +1,11 @@
 {
-  "name": "angular-debounce",
+  "name": "angular-sb-debounce",
   "version": "0.1.1",
   "dependencies": {
     "angular": "~1.2.0"
   },
   "main": "src/debounce.js",
   "devDependencies": {
-    "angular-mocks": "~1.2.11"
+    "angular-mocks": "~1.2.0"
   }
 }
