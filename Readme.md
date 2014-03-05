@@ -13,3 +13,8 @@ Return a new function, that, as long as it continues to be invoked, will not tri
           expensiveSlowFunction();
         }, 250);
       }]);
+
+Licence
+-------
+
+Licensed under the MIT License

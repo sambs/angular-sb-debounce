@@ -16,6 +16,6 @@
     "url": "git@bitbucket.org:ivow/angular-debounce.git"
   },
   "author": "Sam Barnes",
-  "license": "private",
+  "license": "MIT",
   "readmeFilename": "Readme.md"
 }
