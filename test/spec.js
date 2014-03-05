@@ -2,10 +2,10 @@
 describe('debounce service', function () {
   var debounce, $timeout, obj;
 
-  beforeEach(module('debounce'));
+  beforeEach(module('sbDebounce'));
 
   beforeEach(inject(function($injector) {
-    debounce = $injector.get('debounce');
+    debounce = $injector.get('sbDebounce');
     $timeout = $injector.get('$timeout');
   }));
 

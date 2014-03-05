@@ -1,8 +1,8 @@
 /* global angular */
 
-angular.module('debounce', [])
+angular.module('sbDebounce', [])
 
-  .factory('debounce', ['$timeout', function ($timeout) {
+  .factory('sbDebounce', ['$timeout', function ($timeout) {
 
     return function (func, wait, immediate) {
       var timeout;

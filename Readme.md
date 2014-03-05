@@ -1,18 +1,15 @@
-Usage
-=====
+sbDebounce
+==========
 
-angular.module('app', ['debounce'])
+A debounce service for Angular.js. Useful to limit the frequency of calls to an event handler.
 
-  .controller('Controller', ['$scope', 'debounce', function (scope, debounce) {
+    var wrapped = debounce(func, wait, immediate);
 
-      scope.lookupSuggestions = debounce(function (val) {
-        // do something expensive or slow...
-      }, 250);
-  }]);
+Return a new function, that, as long as it continues to be invoked, will not trigger the wrapped function. The wrapped function will be called after it stops being called for `wait` milliseconds. If `immediate` is passed, trigger the function on the leading edge, instead of the trailing.
 
-
-Returns a function, that, as long as it continues to be invoked, will not be triggered. The function will be called after it stops being called for "wait" milliseconds. If `immediate` is passed, trigger the function on the leading edge, instead of the trailing.
-
-See: http://stackoverflow.com/questions/13320015/how-to-write-a-debounce-service-in-angularjs/13320016#13320016
-... with confusing promises code removed.
-
+    angular.module('app', ['sbDebounce'])
+      .controller('Controller', ['$scope', 'sbDebounce', function (scope, debounce) {
+        scope.onKeyPress = debounce(function () {
+          expensiveSlowFunction();
+        }, 250);
+      }]);
