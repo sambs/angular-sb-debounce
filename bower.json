@@ -1,8 +1,8 @@
 {
   "name": "angular-sb-debounce",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
-    "angular": "~1.2.0"
+    "angular": "~1.3.0"
   },
   "main": "src/debounce.js",
   "devDependencies": {
